@@ -1,7 +1,7 @@
 {
   "name": "@codepie/vue-test",
   "version": "0.2.0",
-  "main": "./dist/pie.common.js",
+  "main": "./dist/codepie.common.js",
   "keywords": [
     "material design",
     "vue components"
@@ -13,7 +13,7 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target wc-async --name codepie ./src/components/*.vue",
+    "build-bundle": "vue-cli-service build --target lib --name codepie ./src/components/index.js",
     "test": "vue-cli-service test",
     "e2e": "vue-cli-service e2e",
     "lint": "vue-cli-service lint",
@@ -40,7 +40,10 @@
   },
   "files": [
     "dist/*",
-    "src/"
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
   ],
   "eslintConfig": {
     "root": true,
